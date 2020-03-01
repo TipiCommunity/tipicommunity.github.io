@@ -1,0 +1,599 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+    color: #3C5490;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+}
+
+a {
+    color: #3C5490;
+}
+
+span {
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 880px) {
+    .container {
+        width: 80%;
+    }
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 880px) {
+    .form-container {
+        max-width: 300px;
+    }
+}
+
+#menu {
+    width: 70%;
+    float: right;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 880px) {
+    #menu {
+        float: none;
+        width: 100%;
+    }
+}
+
+#menu ul {
+    margin: 0;
+    padding: 20px 0px 0px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 880px) {
+    #menu ul {
+        text-align: center;
+         !important
+    }
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-right: 5%;
+    color: white;
+}
+
+@media only screen and (max-width: 880px) {
+    #menu ul li {
+        margin-right: 0%;
+        padding: 0 20px;
+    }
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    height: 50px;
+    z-index: 100;
+    width: 100%;
+    margin: 0px auto;
+}
+
+@media only screen and (max-width: 880px) {
+    nav {
+        padding: 5px 0 0 0;
+    }
+}
+
+header {
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    background-image: url(images/background.jpg);
+    background-repeat: repeat-x;
+    background-size: 822px 876px;
+}
+
+@media only screen and (max-width: 880px) {
+    header {
+        background-size: 822px 776px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    header {
+        background-image: url(images/background-mobile.jpg);
+        height: 580px;
+        background-size: 822px 600px;
+    }
+}
+
+header .hero {
+    display: block;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+@media only screen and (max-width: 380px) {
+    header .hero {
+        margin-top: 100px;
+    }
+}
+
+header img {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 880px) {
+    header img {
+        width: 60%;
+    }
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 880px) {
+    header p {
+        font-size: 1em;
+    }
+}
+
+header form {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 380px) {
+    header form {
+        padding: 0;
+    }
+}
+
+header span {
+    font-style: italic;
+}
+
+#cloudsA {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    background-repeat: repeat-x;
+    height: 281px;
+    width: 100%;
+    background-image: url(images/CloudsA.png);
+    background-size: 411px 281px;
+    animation: wind 160s linear infinite;
+}
+
+@media only screen and (max-width: 380px) {
+    #cloudsA {
+        animation: wind 60s linear infinite;
+        top: 55%;
+    }
+}
+
+#cloudsB {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 59%;
+    background-repeat: repeat-x;
+    height: 281px;
+    width: 100%;
+    background-image: url(images/CloudsB.png);
+    background-size: 511px 281px;
+    animation: wind 200s linear infinite;
+}
+
+@media only screen and (max-width: 380px) {
+    #cloudsB {
+        animation: wind 120s linear infinite;
+        top:49%;
+    }
+}
+
+#cloudsC {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 53%;
+    background-repeat: repeat-x;
+    height: 281px;
+    width: 100%;
+    background-image: url(images/CloudsC.png);
+    background-size: 511px 281px;
+    animation: wind 180s linear infinite;
+}
+
+@media only screen and (max-width: 380px) {
+    #cloudsC {
+        animation: wind 280s linear infinite;
+        top: 43%;
+    }
+}
+
+@keyframes wind {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 400vw 0, 200vw 0, 100vw 0;
+    }
+
+}
+
+#bone {
+    width: 111px;
+    height: 111px;
+    position: absolute;
+    left: 65%;
+    top: 35%;
+    animation: bone 3.6s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 880px) {
+    #bone {
+        width: 70px;
+        height: 70px;
+        left: 75%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #bone {
+        width: 50px;
+        height: 50px;
+        left: 35%;
+        top: 56%;
+    }
+}
+
+@keyframes bone {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#moon {
+    width: 178px;
+    height: 178px;
+    position: absolute;
+    left: 30%;
+    top: 7%;
+    z-index: 1;
+    animation: moon 4.8s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 880px) {
+    #moon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #moon {
+        left: 5%;
+    }
+}
+
+@keyframes moon {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(12px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#dog {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    left: 21%;
+    top: 50%;
+    animation: dog 4s ease-in-out infinite;
+}
+
+
+@media only screen and (max-width: 880px) {
+    #dog {
+        width: 150px;
+        height: 150px;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #dog {
+        width: 120px;
+        height: 120px;
+        left: 0%;
+        top: 55%;
+    }
+}
+
+@keyframes dog {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(15px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#planet-blue {
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    z-index: 1;
+    animation: planet-blue 4s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 880px) {
+    #planet-blue {
+        display: none;
+    }
+}
+
+@keyframes planet-blue {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-15px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#sat {
+    width: 117px;
+    height: 117px;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    animation: sat 4s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 880px) {
+    #sat {
+        width: 70px;
+        height: 70px;
+        left: 80%;
+    }
+}
+
+@keyframes sat {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-15px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#planet-purple {
+    width: 189px;
+    height: 189px;
+    position: absolute;
+    left: 65%;
+    top: 55%;
+    animation: planet-purple 4.5s ease-in-out infinite;
+}
+
+@keyframes planet-purple {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    #planet-purple {
+        width: 80px;
+        height: 80px;
+        left: 75%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #planet-purple {
+        top: 50%;
+    }
+}
+
+#planet-yellow {
+    width: 89px;
+    height: 89px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    animation: planet-yellow 4.8s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 880px) {
+    #planet-yellow {
+        display: none;
+    }
+}
+
+@keyframes planet-yellow {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(12px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+input[type=email] {
+    padding: 12px;
+    margin: 8px 4px;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 14px 4px 4px 14px;
+    box-sizing: border-box;
+    font-size: 0.6em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    width: 65%;
+    position: relative;
+    z-index: 2;
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    background-color: #000;
+    color: white;
+    padding: 12px 10px 12px 10px;
+    margin: 8px 4px;
+    border: none;
+    border-radius: 4px 14px 14px 4px;
+    cursor: pointer;
+    font-size: 0.6em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    width: 28%;
+    position: relative;
+    z-index: 2;
+}
+
+.form-sub {
+    padding-top: 0;
+    margin-top: 0;
+    color: black;
+    font-size: 0.7em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.light {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#letter  {
+    z-index: 2;
+}
+
+@media only screen and (max-width: 880px) {
+    #letter {
+        position: relative;
+        top: -120px;
+    }
+}
+
+#footer {
+    margin: 30px 0;
+}
+
+@media only screen and (max-width: 880px) {
+    #footer {
+        margin: 30px 0 0 0;
+        position: relative;
+        top: -100px;
+    }
+}
+
+#footer p {
+    text-align: center;
+    font-size: 0.7em;
+}
